@@ -32,11 +32,8 @@ def binary_search(input_array, value):
     return -1
 
 test_list = [1,3,9,11,15,19,29]
-#input_values = [1, 15, 30, 0, 31, 2, 29, 28, 20, 4, 11, 13]
 test_val1 = 28
 test_val2 = 11
 print binary_search(test_list, test_val1)
 print binary_search(test_list, test_val2)
 
-# for x in input_values:
-#     print('{}: {}'.format(x, binary_search(test_list, x)))
