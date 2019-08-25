@@ -21,19 +21,10 @@ def quicksort(array, low, high):
 
     array[high]  = array[pivot_position]
     array[pivot_position] = pivot
-
-    # partition_index = array.index(pivot)
-    # print 'abc'
-    # print array
-    # print array[partition_index]
-    # # sub_array_one = array[:partition_index]
-    #sub_array_two = array[partition_index+1:]
-
     quicksort(array, low, pivot_position - 1)
     quicksort(array, pivot_position + 1, high)
 
     return array
 
 test = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
-#test = [50,30,10,100,20]
 print quicksort(test, 0 , len(test)-1)
