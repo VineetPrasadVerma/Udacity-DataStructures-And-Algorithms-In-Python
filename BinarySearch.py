@@ -15,12 +15,12 @@ def binary_search(input_array, value):
     final_array = input_array
     while len(input_array) >= 1:
         
-	    size_of_list = len(input_array)
+	    size_of_list = len(input_array) - 1
 	    
 	    if (size_of_list % 2) != 0:
-	    	middle_element = input_array[size_of_list/2]
+	    	middle_element = input_array[size_of_list//2]
 	    else:
-	    	middle_element = input_array[(size_of_list/2)-1]
+	    	middle_element = input_array[(size_of_list//2)-1]
 	    
 	    if value == middle_element:
 	    	return final_array.index(middle_element)
@@ -32,8 +32,11 @@ def binary_search(input_array, value):
     return -1
 
 test_list = [1,3,9,11,15,19,29]
-test_val1 = 28
-test_val2 = 11
-print binary_search(test_list, test_val1)
-print binary_search(test_list, test_val2)
-
+test_val1 = 25
+test_val2 = 15
+test_val3 = 1
+test_val4 = 0
+print(binary_search(test_list, test_val1))
+print(binary_search(test_list, test_val2))
+print(binary_search(test_list, test_val3))
+print(binary_search(test_list, test_val4))
